@@ -7,7 +7,6 @@ object Server {
 
     suspend fun getMovie(): List<MovieData> {
         delay(5000)
-        throw SocketTimeoutException()
         return listOf(
             MovieData(
                 1,
